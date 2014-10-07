@@ -1,0 +1,7 @@
+<h1> {{ film.name }}</h1>
+<h2> {{ film.description }} </h2>
+
+<form action="{% url 'film' film.id %}" method="post">
+{% csrf_token %}
+<input type="submit" value="Vote" />
+</form>

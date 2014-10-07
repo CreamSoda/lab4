@@ -1,0 +1,3 @@
+<h1> {{ session.film.name }}</h1>
+<h1> {{ session.cinema.name }} </h1>
+<h2> {{ session.start }} </h2>

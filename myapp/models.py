@@ -1,0 +1,24 @@
+from django.db import models
+
+class Film(models.Model):
+    name = models.CharField(max_length=50)
+    description = models.TextField()
+    def __unicode__(self):
+        return self.name
+    
+class Cinema(models.Model):
+    name = models.CharField(max_length=50)
+    description = models.TextField()
+    adress = models.TextField()
+    def __unicode__(self):
+        return self.name
+    
+class Session(models.Model):
+    cinema = models.ForeignKey(Cinema)
+    film = models.ForeignKey(Film)
+    start = models.DateTimeField()
+    end = models.DateTimeField()
+    def __unicode__(self):
+        return self.cinema.name + " " + self.film.name
+
+# Create your models here.
