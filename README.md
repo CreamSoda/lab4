@@ -40,5 +40,11 @@
   ```
   python manage.py runserver
   ```
-6. Приложение доступно по адресу: http://localhost:8000/myapp
-   Админка http://localhost:8000/admin
+6. Приложение доступно по адресу: 
+  ```
+  http://localhost:8000/myapp
+  ```
+   Админка 
+   ```
+   http://localhost:8000/admin
+   ```
